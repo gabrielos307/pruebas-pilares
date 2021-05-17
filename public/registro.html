@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+    <h1>Registrate y forma parte de nosotros</h1>
+    <form action="/js/registro.js" method="POST" onsubmit="return validacion();">
+
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre"> 
+
+        <label for="pass">Password: </label>
+        <input type="password" id="pass">
+
+        <label for="correo">Correo: </label>
+        <input type="email" id="correo">
+
+        <label for="archivo">Archivos: </label>
+        <input type="file" id="archivo">
+        
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="masculino" name="genero" value="m">
+
+        <label for="femenino">Femenino</label>
+        <input type="radio" id="femenino" name="genero" value="f">
+
+        <label for="sucursal">Sucursal: </label>
+        <select name="control-sucursal" id="sucursal">
+            <option value="1">Sucursal 1</option>
+            <option value="2">Sucursal 2</option>
+            <option value="3">Sucursal 3</option>
+            <option value="4">Sucursal 4</option>
+            <option value="5">Sucursal 5</option>
+        </select>
+
+        <label for="edad"></label>
+        <input type="number" id="edad">
+
+        <button type="submit">Registrarse</button>
+        <button type="reset">Borrar</button>
+    </form>
+</body>
+<script src="validar.js"></script>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Prueba</title>
+</head>
+<body>
+    <div>
+        <h1>Dice si mi numero es par</h1>  
+        <p>Por favor, introduzca un numero:</p>  
+        <input id="num1"><br>  
+        <button type="button" onclick="esPar()">Validar</button>  
+        <p id="par"><!--texto--></p> 
+    </div>
+    <!--Div padre-->
+    <div style="padding: 50px;">
+        <!--Div Hijo 1-->
+        <div style="display: flex; border: 1px solid red; text-align: center; width: 200px; align-items: center; justify-content: center;">
+            <h1 id="diaSemana" style="padding-left:10px;"></h1>
+            <h1 id="dia" style="padding-left:10px;"></h1>
+            <h1 id="mes"  style="padding-left:10px;"></h1>
+            <h1 id="anio"  style="padding-left:10px;"></h1>
+        </div>
+        <!--Div hijo 2-->
+        <div style="display: flex; border: 1px solid red; text-align: center; width: 200px; align-items: center; justify-content: center;">
+            <h1 id="hora"></h1>
+            <h1>:</h1>
+            <h1 id="minuto"></h1>
+            <h1>:</h1>
+            <h1 id="segundosFecha"></h1>
+            <h1 id="formato"></h1>
+        </div>
+    </div>
+
+
+    
+
+</body>
+<footer>
+    <div class="div-padre">
+        <div class="div-md">
+            <h1>Hecho por:</h1>
+            <p>Gabriel Alejandro</p>
+            <p>Alumno de Escuela de Código</p>        
+        </div>
+        <div class="div-md">
+            <h1>Correo: </h1>
+            <p>gabrielos307@gmail.com</p>
+        </div>
+    </div>
+    <hr>
+    <p>Todos los derechos reservados &copy;</p>
+</footer>
+<script src="js/suma.js"></script>
+<script src="js/esPar.js"></script>
+<script src="js/fecha.js"></script>
+</html>

@@ -1,0 +1,89 @@
+h2{
+		color: gold; 
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.texto-parrafo{
+		text-align: justify; 
+		margin-right: 10px; 
+		color: green !important; 
+		font-family: cursive;
+	}
+
+	#listas{
+		background-color: orange;
+		display: flex;
+	}
+
+	.titulos{
+		color: orange; 
+		text-align: right !important; 
+		padding-bottom: 106px; 
+		border: 9px black solid; 
+		margin: 72px
+	}
+
+	#tabla{
+		background-color: blue;
+		color: red;
+	}
+
+	.menu-lista{
+		display: inline-flex;
+		list-style: none;
+	}
+
+	.pad-sm{
+		padding: 15px;
+	}
+	.menu{
+		text-align: right;
+		width: 80%;
+	}
+
+	.menu-padre{
+		display: flex;
+	}
+
+	.menu-img{
+		padding-left: 50px;
+		display: flex;
+	}
+
+
+	.enlaces-menu{
+		text-decoration: none;
+		color: red;
+	}
+
+	.enlaces-menu:hover{
+		text-decoration: underline;
+		color: gold;
+	}
+
+
+	header{
+		background-color: black;
+		padding: 10px;
+	}
+	.div-padre{
+		display: flex;
+	}
+
+	.div-md{
+		width: 50%;
+		padding-left: 70px;
+	}
+
+	footer{
+		background-color: #4089b9;
+	}
+	.texto-footer{
+		padding: 10px;
+		font-size: 15px;
+		text-align: center;
+	}
+	body{
+		margin: 0px;
+	}
