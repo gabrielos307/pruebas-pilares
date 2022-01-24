@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registro</title>
+</head>
+<body>
+    <h1>Registrate y forma parte de nosotros</h1>
+    <form action="js/registro.js" method="POST" style="text-align: center;" onsubmit="return validar()">
+        <div>
+            <div >
+                <label for="nombre" class="formulario-label">Nombre: </label>
+                <input type="text" id="nombre" class="formulario-input" required> 
+            </div>
+            <div>
+                <label for="pass" class="formulario-label">Password: </label>
+                <input type="password" id="pass" class="clase_1">
+            </div>
+        </div>
+        <div>
+            <label for="correo" class="formulario-label">Correo: </label>
+            <input type="email" id="correo" class="clase_1">
+        </div>
+        <div>
+        <label for="archivo">Archivos: </label>
+        <input type="file" id="archivo">
+        </div>
+    <div>
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="masculino" name="genero" value="m">
+    </div>
+    <div>
+        <label for="femenino">Femenino</label>
+        <input type="radio" id="femenino" name="genero" value="f">
+    </div>
+    <div>
+
+        <label for="sucursal">Sucursal: </label>
+        <select name="control-sucursal" id="sucursal">
+            <option value="1">Sucursal 1</option>
+            <option value="2">Sucursal 2</option>
+            <option value="3">Sucursal 3</option>
+            <option value="4">Sucursal 4</option>
+            <option value="5">Sucursal 5</option>
+        </select>
+    </div>
+    <div>
+        <label for="edad">Edad</label>
+        <input type="number" id="edad">
+    </div>
+    <div>
+        <button type="submit">Registrarse</button>
+        <button type="reset">Borrar</button>
+    </div>
+    </form>
+</body>
+
+<style>
+    .clase_1{
+        height: 23px;
+        width: 70%;
+        border-color: bisque;
+        border-block: 28px;
+        border-width: 2px;
+        border-radius: 6px;
+        font-size: 16px;
+        padding: 5px;
+        font-style: italic;
+    }
+    h1{
+        color:1px
+    }
+    #edad{
+        height: 50px;
+    }
+</style>
+
+<script src="js/validacion.js"></script>
+</html>

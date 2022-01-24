@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>Tenis </p>
+        <p>Precio: $400</p>
+        <button onclick="agregar([1,'Tenis', 400])">Comprar</button>
+    </div>
+    <div>
+        <p>Mochila </p>
+        <p>Precio: $700</p>
+        <button onclick="agregar([2,'Mochila', 700])">Comprar</button>
+    </div>
+    <div>
+        <p>Chamarra </p>
+        <p>Precio: $600</p>
+        <button onclick="agregar([3,'Chamarra', 600])">Comprar</button>
+    </div>
+
+    <div>
+        <button onclick="listar()">Ver carrito</button>
+        <p id="carrito"></p>
+    </div>
+</body>
+<script src="js/carrito.js"></script>
+</html>

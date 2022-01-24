@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Mi primera pagina</title>
+</head>
+
+
+
+
+<body>
+	<header>
+		<!---Div padre-->
+		<div class="menu-padre">
+			<div class="menu-img">
+				<img src="img/icono.png" height="80"  width="80">	
+				<h1 style="color:   #fff; padding-left:10px ">Doméstico</h1>
+			</div>
+			<div class="menu">
+				<ul class="menu-lista">
+					<li class="pad-sm">
+						<a class="enlaces-menu" href="#">Inicio</a>
+					</li>
+					<li class="pad-sm">
+						<a class="enlaces-menu" href="#">Horno de microondas</a>
+					</li>
+					<li class="pad-sm">
+						<a class="enlaces-menu" href="#">Licuadoras</a>
+					</li>
+					<li class="pad-sm">
+						<a class="enlaces-menu" href="#">Contacto</a>
+					</li>
+				</ul>
+			</div>	
+		</div>
+	</header>
+	<div>
+	<h1 id="saludo"></h1>
+	<h2 id="mi-nombre">
+		<!---Inserta el mensaje de JS--->
+	</h2>
+	<h2 style="color:#000">hola</h2>
+	<button onclick="edad_fun()">Click para correr la función</button>
+
+
+
+	<h1 id="hola-mundo"></h1>
+
+
+	<a href="www.google.com">Click y me voy a tablas</a>
+
+	<div style="color: orange; text-align: right; padding-bottom: 106px; border: 9px black solid; margin: 72px">
+		<h2 style="text-align: center; color: blue">Estoy dentro de un div</h2> 
+		<p style="text-align: justify; margin-right: 10px; color: green; ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.</p>
+	</div>
+
+
+	<div>
+		<h2 class="titulos">Estoy dentro del div 2</h2>
+		<strong><p class="texto-parrafo">Estoy en negritas</p></strong>
+		<i><p>Soy una italica</p></i>
+
+		<!-- (la letra sola nunca debe ir sola porque puede que no cumpla con las propiedades de diseño, por eso SIEMPRE que escribimos un texto, se escribe dentro de un PARRAFO) -->
+		<p class="texto-parrafo">Soy un texto que está solito</p>
+		Soy un texto que está solito 
+
+		<!-- "a" es la etiqueta para crear un link -->
+		<a href="www.google.com"><p>Soy un link</p></a>
+		ñññññ
+	</div>
+
+
+	<div id="listas">
+		<h2 style="color: aqua" class="texto-parrafo">Explicación de listas</h2>
+
+		<!--Existen listas ordenadas y desordenadas, las ordenadas llevan números o puntos, mientras que las desordenadas no-->
+		<ul>
+			<li>Soy el elemento 1</li>
+			<li>Soy el elemento 2</li>
+			<li>Soy el elemento 3</li>
+		</ul>
+
+		<!--lista ordenada-->
+		<ol>
+			<li>Soy el elemento</li>
+			<li>Soy el elemento</li>
+			<li>Soy el elemento</li>
+		</ol>
+	</div>
+
+
+	<div id="tabla">
+		<h2>Explicación de tablas</h2>
+
+
+		<table border="1">
+			<thead>
+				<!-- tr = table rout --- cata "tr" va a ser un renglón de la tabla -->
+				<tr>
+					<!-- th = es para escribir cada elemento en el encabezado de nuestra tabla -->
+					<th>Columna 1</th>
+					<th>Columna 2</th>
+					<th>Columna 3</th>
+				</tr>
+			</thead>
+
+			<tr>
+				<!-- td = es la columna de la tabla, en donde se pone cada elemento de la tabla -->
+				<td>Elemento 1.1</td>
+				<td>Elemento 1.2</td>
+				<td>Elemento 1.3</td>
+			</tr>
+
+			<tr>
+				<td>Elemento 2.1</td>
+				<td>Elemento 2.2</td>
+				<td>Elemento 2.3</td>
+			</tr>
+
+			<tr>
+				<td>Elemento 3.1</td>
+				<td>Elemento 3.2</td>
+				<td>Elemento 3.3</td>
+			</tr>
+
+		</table>
+
+	</div>
+
+
+	<img src="img/perrito.jpg" width="400" height="250">
+</div>
+<footer>
+	<!--Div padre-->
+	<div class="div-padre">
+		<div class="div-md">
+			<h1>Hecho por:</h1>
+			<p>Gabriel Alejandro Herrera Gandarela</p>
+			<p>Alumno de Escuela de Código</p>
+		</div>
+		<div class="div-md">
+			<h1>Correo: </h1>
+			<a href="mailto:gabrielos307@gmail.com">gabrielos307@gmail.com</a>
+		</div>
+	</div>
+	<hr>
+	<p class="texto-footer">Derechos reservados &copy;</p>
+	
+</footer>
+
+</body>
+
+
+
+<script type="text/javascript">
+	//alert("hola, soy una alerta !!!!")
+	//confirm("¿Deseas saber acerca de la autonomía económica?")
+	//prompt("Ingresa tu nombre")
+		
+</script>
+
+
+<script src="js/alerta-nombre.js"></script>
+
+<script src="js/hola-mundo.js"></script>
+
+<script src="js/MensajeEnConsola.js"></script>
+
+
+
+
+</html>

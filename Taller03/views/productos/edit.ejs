@@ -1,0 +1,16 @@
+<h1 class="display-4">Editar producto</h1>
+<form action="/productos/update/<%= producto.id %>" method="POST">
+    <div class="form-group">
+        <label for="nombre"><%= producto.nombre%></label>
+        <input type="text" name="nombre" id="nombre" class="form-control" value="<%= producto.nombre%>">
+    </div>
+    <div class="form-group">
+        <label for="descripcion"><%= producto.descripcion%></label>
+        <input type="text" name="descripcion" id="descripcion" class="form-control" value="<%= producto.descripcion%>">
+    </div>
+    <div class="form-group">
+        <label for="nombre"><%= producto.precio%></label>
+        <input type="number" name="precio" id="precio" class="form-control" value="<%= producto.precio%>">
+    </div>
+    <input type="submit" value="Enviar" class="btn btn-primary">
+</form>

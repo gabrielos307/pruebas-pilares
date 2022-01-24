@@ -1,0 +1,20 @@
+.nav-color{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+
+.circulo{
+    padding: 0px 4px 0px 3px;
+    -moz-border-radius:50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.notificacion{
+    font-size: 10px;
+    position: absolute;
+    top: 8px;
+    color:white;
+    font-family: sans-serif;
+}

@@ -1,0 +1,36 @@
+.menu-lista{
+    list-style: none;
+    display: inline-flex;
+    margin: auto;
+}
+.menu-md{
+    width: 100%;
+    text-align: right;
+}
+
+.menu-lista li{
+    padding: 8px;
+}
+.menu-lista li:hover{
+    padding: 12px;
+    background-color: darkorange;
+}
+
+.menu-lista li a{
+    text-decoration: none;
+    color: white;
+}
+.menu-lista li a:hover{
+    text-decoration: underline;
+    color: aquamarine;
+}
+
+.menu-padre{
+    display: flex;
+    background-color: brown;
+}
+.menu-img{
+    width: 90px;
+    height: 100px;
+}
+
