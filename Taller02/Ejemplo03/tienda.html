@@ -4,29 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <p>Tenis </p>
-        <p>Precio: $400</p>
-        <button onclick="agregar([1,'Tenis', 400])">Comprar</button>
+    
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Tienda</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">Dropdown</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </li>
+        </ul>
+        <a type="button" onclick="listar()"><i class="fas fa-cart-arrow-down fa-2x"></i></a>
+      </div>
     </div>
-    <div>
-        <p>Mochila </p>
-        <p>Precio: $700</p>
-        <button onclick="agregar([2,'Mochila', 700])">Comprar</button>
-    </div>
-    <div>
-        <p>Chamarra </p>
-        <p>Precio: $600</p>
-        <button onclick="agregar([3,'Chamarra', 600])">Comprar</button>
+  </nav>
+  
+  
+
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-4">
+            <div class="card mb-3">
+                <h3 class="card-header">Mochila</h3>
+                <div class="card-body">
+                  <h5 class="card-title">Mochila de los paw patrol</h5>
+                  <h6 class="card-subtitle">Precio: $400</h6>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
+                  <rect width="100%" height="100%" fill="#868e96"></rect>
+                  <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+                </svg>
+                <div class="card-body">
+                    <button class="btn btn-outline-primary" onclick="agregar([1,'Mochila', 400])">Comprar</button>
+                </div>
+              </div> 
+        </div>
+        <div class="col-4">
+            <div class="card mb-3">
+                <h3 class="card-header">Tenis</h3>
+                <div class="card-body">
+                  <h5 class="card-title">Tenis de los paw patrol</h5>
+                  <h6 class="card-subtitle">Precio: $600</h6>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
+                  <rect width="100%" height="100%" fill="#868e96"></rect>
+                  <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+                </svg>
+                <div class="card-body">
+                    <button class="btn btn-outline-primary" onclick="agregar([2,'Tenis', 600])">Comprar</button>
+                </div>
+              </div> 
+        </div>
+        <div class="col-4">
+            <div class="card mb-3">
+                <h3 class="card-header">Chamarra</h3>
+                <div class="card-body">
+                  <h5 class="card-title">Chamarra adidas</h5>
+                  <h6 class="card-subtitle">Precio: $700</h6>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
+                  <rect width="100%" height="100%" fill="#868e96"></rect>
+                  <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+                </svg>
+                <div class="card-body">
+                    <button class="btn btn-outline-primary" onclick="agregar([3,'Chamarra', 700])">Comprar</button>
+                </div>
+              </div> 
+        </div>
     </div>
 
+
     <div>
-        <button onclick="listar()">Ver carrito</button>
+        
         <p id="carrito"></p>
     </div>
+</div>
+
+   
 </body>
 <script src="js/carrito.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </html>

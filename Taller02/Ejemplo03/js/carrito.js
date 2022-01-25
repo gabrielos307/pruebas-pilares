@@ -1,14 +1,11 @@
 var carrito = [];
 function agregar(producto){
-    for(let i = 0; i < this.carrito.length; i++){
+    validar(producto[3], this.carrito);
+    producto.push(1); //[id, nombre, precio, cantidad*]
+    
+    this.carrito.push(producto);
         
-        if(this.carrito[i][0] == producto[0]){
-            this.carrito[i][3] = this.carrito[i][3] + 1;
-        }else{
-            producto.push(1); //[id, nombre, precio, cantidad*]
-            this.carrito.push(producto);
-        }
-    }
+    
     console.log(this.carrito);
     
 }
@@ -18,7 +15,12 @@ function eliminar(producto){
     this.carrito.splice(indice, 1);
 }
 
-
+function validar(elemento, producto){
+    if(elemento == producto){
+        return true;
+    }
+    return false;
+}
 function listar() {
-    document.getElementById("carrito").innerHTML = this.carrito;
+    document.getElementById("carrito").innerHTML = carrito;
 }
